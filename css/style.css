@@ -1,5 +1,6 @@
 nav{
     display:flex;
+    max-height: 100px;
 }
 
 ul {
@@ -23,19 +24,22 @@ li {
 } 
 
 .hero-header{
-    width: 44%; 
     margin: 0 auto;
     text-align: center;
+    max-height: calc(100vh - 100px);
 }
 
 body{
     background-image: url("../Images/BurrageCloudsBackround.png");
     background-size: 100%;
+    height: calc(100vh - 25px);
     background-repeat: no-repeat;
+    margin: 0;
+
 }
 
 .burrage-sig-and-title{
-    width: 90%;
+    width: 35%;
     margin: 0 auto;
 }
 
@@ -46,7 +50,11 @@ p{
     font-weight: lighter;
 }
 
-
+.intro-text{
+    margin: 0 auto;
+    width: 50%;
+    max-height: 130px;
+}
 button{
     text-transform: uppercase;
     padding: 13px 24px;
@@ -61,6 +69,7 @@ button{
     justify-content: center;
     align-items: center;
     flex-direction: row;
+    margin: 20px;
 
 }
 .hero-button{
@@ -81,17 +90,24 @@ button{
 
 .icons{
     width: 40%;
+    align-items: center;
 
 }
 
 footer{
     background-image: url("./../Images/FooterArt.png");
-    background-size: 100%;
     background-repeat: no-repeat;
     align-items:center;
     display: flex;
     flex-direction: column;
-    margin: 0 auto;
+    margin-top: 30%;    
+}
+
+.footer-content{
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+
 }
 
 h1{
@@ -101,4 +117,15 @@ h1{
     font-size: 22px; 
     font-weight: lighter;
     
+}
+
+@media only screen and (max-width: 768px) {
+    p {
+        font-size: 17px;
+
+    };
+    .intro-text{
+        
+    }
+
 }
